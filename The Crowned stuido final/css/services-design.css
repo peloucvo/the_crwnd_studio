@@ -1,0 +1,63 @@
+  /*SERVICES*/
+  .servicesTop {
+    background-color: #333333;
+    padding-left: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .servicesTop h1 {
+    margin-bottom: 1px;
+    margin-top: 0px;
+    color: #cc3333;
+    font-weight: bold;
+
+  }
+  .servicesTop p {
+    margin: 0px;
+    color: white;
+  }
+  .mainServ {
+    display: flex;
+    flex-direction:row ;
+    border-bottom: 4px solid #cc3333;
+  }
+  .mainServ h2 {
+    color: white;
+    writing-mode: vertical-lr; 
+    transform: rotate(-180deg);
+  }
+  .leftServ {
+    background-color: #cc3333;
+    width: 5%;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .centerServ {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .centerServ a {
+    text-decoration: none;
+    background-color: #cc3333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    top: -15px;
+  }
+  .centerServText {
+    width: 80%;
+  }
+  .rightServ {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .rightServ img {
+    width: 70%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }

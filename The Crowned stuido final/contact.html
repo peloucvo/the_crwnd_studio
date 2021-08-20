@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/design.css" rel="stylesheet" type="text/css">
+        <link href="css/navmenu.css" rel="stylesheet" type="text/css">
+        <link href="css/contact-design.css" rel="stylesheet" type="text/css">
+        <title>CONTACT OUR STUDIO</title>
+        <script src="https://kit.fontawesome.com/231d15afd6.js" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+        <link rel="stylesheet" href="css/slider-style.css">
+
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo"><img src="img/header-logo.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="index.html">INDEX</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="work.html">WORK</a>
+                    </li>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+                    </li>
+                    <li class="actual">
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                let mainNav = document.getElementById("js-menu");
+            let navBarToggle = document.getElementById("js-navbar-toggle");
+            
+            navBarToggle.addEventListener("click", function() {
+              mainNav.classList.toggle("active");
+            });
+            </script>
+        </div>
+    </div>
+        </header>
+    
+    <main>
+        <section class="contactText">
+            <div class="contactDiv">
+                <div class="contactHeading">
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="contactText">
+                    <p>Got a project on mind? Or simply want to know more about us?</p>
+                    <p>Simpy fill out all the necessary details and we will get back to you wtihin few hours.</p>
+                    <h2>Let's make something amazing happen together!</h2>
+                </div>
+            </div>
+        </section>
+        <section class="contactImg">
+            <div class="contactProcces">
+                <img src="img/process.png">
+            </div>
+        </section>
+        <section class="contactForm">
+            <div class="contactFormContainer">
+                <form class="form-inline" action="contactform.php" method="post">
+                    <div class=frmName>
+                    <label for="fname">First Name (required)</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    </div>
+
+                    <div class="frmLName">
+                    <label for="lname">Last Name (required)</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."  required>
+                    </div>
+
+                    <div class="frmCName">
+                    <label for="cname">Company name (optional)</label>
+                    <input type="text" id="cname" name="companyname" placeholder="Your company name..">
+                    </div>
+
+                    <div class="frmCDo">
+                    <label for="whatcdo">What does your company do? (optional)</label>
+                    <input type="text" id="whatcdo" name="whatcompanydo" placeholder="Your brand..">
+                    </div>
+
+                    <div class=frmEmail> 
+                    <label for="email">Email (required)</label>
+                    <input type="text" id="email" name="youremail" placeholder="Your email.."  required>
+                    </div> 
+
+                    <div class="frmPNumber">
+                    <label for="pnumber">Phone number (optional)</label>
+                    <input type="text" id="pnumber" name="phonenumber" placeholder="Your phone number..">
+                    </div>
+                    <div class="price-range-slider">
+  
+                        <p class="range-value">
+                          <input type="text" id="amount" readonly>
+                        </p>
+                        <div id="slider-range" class="range-bar"></div>
+                        
+                      </div>
+                      <!-- partial -->
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                      <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script><script  src="price-slider.js"></script>
+
+                    <div class="frmInterested">
+                    <label for="email">I am interested in: (required)</label>
+                    <div class="frmService">
+                        <input type="checkbox" id="job1" name="webDesign" value="Web">
+                        <label for="job1"> Web design</label><br>
+                        <input class="input-inline" type="checkbox" id="job2" name="printDesign" value="Print">
+                        <label for="job2"> Print Design</label><br>
+                        <input class="input-inline" type="checkbox" id="job3" name="branding" value="Brand">
+                        <label for="job3"> Branding</label><br>
+                        <input class="input-inline" type="checkbox" id="other" name="other" value="Other">
+                        <label for="job3"> Other</label><br>
+                        <br>
+                    </div>
+                </div>
+
+                    <label class="labelSub" for="subject">Tell us about Your project:<br>What are you trying to achieve, the timescales and your budget (required)
+                    </label>
+                    <textarea id="msg" name="message" placeholder="Write something.."  required style="height:200px"></textarea>
+                    <input type="checkbox" id="agree" name="agree" value="Form Agree" required>
+
+                    <label for="agree"> Please tick to consent to your data being stored inline with our Privacy Policy.<br>
+                                    We will only use it to contact you regarding our services and will not pass them to any third-party.<br>
+                    </label>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerDivs">
+        <div class="terms"><a href="terms-conditions.html">Terms & Conditions |</a><a href="privacy-policy.html"> Privacy Policy</a></div>
+        <div class="copyright"><p>© 2020 by <a href="index.html">THE CRWND STUDIO|</a> All rights reserved.</p></div>
+        <div>                   
+            <nav class="soc_media">
+                <a class="soc_site" href="https://www.facebook.com/theCROWNEDstudio/" target="_blank"> <img src="img/036-facebook.svg"></a>
+                <a class="soc_site" href="index.html"> <img src="img/008-twitter.svg" alt="Twitter"></a>
+                <a class="soc_site" href="index.html"> <img src="img/001-youtube.svg" alt="Youtube"></a>
+                <a class="soc_site" href="index.html"> <img src="img/029-instagram.svg" alt="Instagram"></a>
+            </nav>
+    </div>
+    </div>
+    </footer>
+    </body>
+</html>

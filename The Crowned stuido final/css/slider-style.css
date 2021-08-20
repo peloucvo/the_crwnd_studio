@@ -1,0 +1,56 @@
+
+.price-range-slider {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.price-range-slider .range-value {
+  margin: 0;
+}
+.price-range-slider .range-value input {
+  width: 100%;
+  background: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: initial;
+  box-shadow: none;
+  border: none;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.price-range-slider .range-bar {
+  border: none;
+  background: #000;
+  height: 3px;
+  width: 100%;
+  margin-left: 0px;
+}
+.price-range-slider .range-bar .ui-slider-range {
+  background: #cc3333;
+}
+.price-range-slider .range-bar .ui-slider-handle {
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  border: 2px solid #111111;
+  height: 17px;
+  width: 17px;
+  top: -0.52em;
+  cursor: pointer;
+}
+.price-range-slider .range-bar .ui-slider-handle + span {
+  background: #cc3333;
+}
+@media screen and (min-width: 1008px) {
+
+  .price-range-slider .range-value input {
+
+    padding-top: 15px;
+}
+}
+
+/*--- /.price-range-slider ---*/

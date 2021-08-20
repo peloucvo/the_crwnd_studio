@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/design.css" rel="stylesheet" type="text/css">
+        <link href="css/navmenu.css" rel="stylesheet" type="text/css">
+        <link href="css/index-design.css" rel="stylesheet" type="text/css">
+        <title>THE CRWND STUDIO</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="material-icons">menu</i>
+                </span>
+                <a href="#" class="logo"><img src="img/header-logo.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li class="actual">
+                        <a href="index.html">INDEX</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="work.html">WORK</a>
+                    </li>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <script>
+                let mainNav = document.getElementById("js-menu");
+            let navBarToggle = document.getElementById("js-navbar-toggle");
+            
+            navBarToggle.addEventListener("click", function() {
+              mainNav.classList.toggle("active");
+            });
+            </script>
+        </div>
+    </div>
+        </header>
+        <main>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="img/CRWNDslider01.gif" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/slideshow2.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/slideshow3.png" style="width:100%">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 6000);
+                }
+                </script>
+
+<div class="about">
+    
+    <article class="red"><img src='img/face_logo_PRINT_rdy.png' onmouseover="this.src='img/logov120.png';" onmouseout="this.src='img/face_logo_PRINT_rdy.png';" /></article>
+    <article class="white">
+        <h1>WHO WE ARE...</h1>
+        <p>THE CRWND STUDIO, Is more than just a brand. It is the way we work, the way we have fun and most importantly the way we live.</p>
+        <p>Here at our studio we strive to create modern, fresh and unique ideas and designs while deliviring the best results possible to satisfy our clients to the fullest.</p>
+        <p>We specialize in Web and Print Designs from simple personal website to a complete identity branding.</p>
+        <p>Having a brand identity is important aspect of representing your business, so why not start with THE CRWNED STUDIO, a place that offers a professional and effective services.</p>
+        <p style="color:#cc3333;">WE ARE THE CRWND STUDIO</p>
+        <a href="about.html">Learn more</a>
+        
+    </article>
+</div>
+
+<div class="quote">
+<article>
+    <p><b>"Design is not just what it looks like and feels like. Design is how it works."</b><br>
+    - Steve Jobs, co-founder of Apple, Inc.</p>
+</article>
+</div>
+
+<section class="services">
+    <div class="servicesHeading">
+        <h1>OUR SERVICES...</h1>
+        <p><b>From basic websites to business cards, leaflets, posters and full stationary designs.</b></p>
+    </div>
+    <div class="servicesArticles">
+    <article class="webDesignArticle">
+        <img src='img/web-design-off.png' onmouseover="this.src='img/web-design-on.png';" onmouseout="this.src='img/web-design-off.png';" />
+        <h2>WEB DESIGN</h2>
+        <p>A fully functional modern, clean and unique web design made to Your requirements</p>
+    </article>
+    <article class="printDesignArticle">
+        <img src='img/print-design-off.png' onmouseover="this.src='img/print-design-on.png';" onmouseout="this.src='img/print-design-off.png';" />
+        <h2>PRINT DESIGN</h2>
+        <p>From leaflets to t-shirt designs. Everything that can be printed we can design, making it our top priority to look and feel as high tier design</p>
+    </article>
+    <article class="brandingArticle">
+        <img src='img/branding-off.png' onmouseover="this.src='img/branding-on.png';" onmouseout="this.src='img/branding-off.png';" />
+        <h2>BRANDING</h2>
+        <p>Once we have and idea of who you are and what you are representing we can design a complete new identity brand to suit your needs and satisfy the eyes while representing You and Your bussines.</p>
+    </article>
+</div>
+
+
+</section>
+<div class="work">
+    <div class="work-descr">
+        <h3 id="workHeading">Lorem ipsum dolor</h3>
+        <p id="workText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Pellentesque arcu. Pellentesque pretium lectus id turpis. Phasellus et lorem id felis nonummy placerat. Proin mattis lacinia justo.</p>
+    </div>
+    <div class="work-articles">
+        <article onclick="showWork1()">
+            <img src="img/face_logo_PRINT_rdy.png">
+            <a href="clients.html">PERSONAL LOGO</a>
+        </article>
+
+        <article onclick="showWork2()">
+            <img>
+            <h1>WORK #2</h1>
+            <a href="clients.html">WORK #1</a>
+        </article>
+
+        <article onclick="showWork3()">
+            <img>
+            <h1>WORK #3</h1>
+            <a href="clients.html">WORK #3</a>
+        </article>
+
+        <article onclick="showWork4()">
+            <img>
+            <h1>WORK #4</h1>
+            <a href="clients.html">WORK #4</a>
+        </article>
+    </div>
+  </div>
+  <script>
+      function showWork1() {
+        document.getElementById("workHeading").innerHTML = "Personal logo";
+        document.getElementById("workText").innerHTML = "Personal logo made by the worst designer artšist Líbor Pokorník Květoslav";
+      }
+      function showWork2() {
+        document.getElementById("workHeading").innerHTML = "Work #2";
+        document.getElementById("workText").innerHTML = "Ještě nic nemáme bráško";
+      }
+      function showWork3() {
+        document.getElementById("workHeading").innerHTML = "Work #3";
+        document.getElementById("workText").innerHTML = "Moc nečum";
+      }
+      function showWork4() {
+        document.getElementById("workHeading").innerHTML = "Work #4";
+        document.getElementById("workText").innerHTML = ".I.";
+      }
+  </script>
+
+  <section class="indexContact">
+<div class="indexContactDiv"></div>
+  <p>If you are interested we would love to work with you and create somtehing very unique and special that will not only be appealing to your eyes but will also be a way to represent you and give you a brand identity</p>
+  <p>We welcome negototiations nad parnership affiliation.</p>
+  <p class="contact-space">If you have any questions, and whis to contact our team directly, please click below.</p>
+  <br>
+  <a href="contact.html">CONTACT US</a>
+</section>
+
+</main>
+<footer>
+    <div class="footerDivs">
+    <div class="terms"><a href="terms-conditions.html">Terms & Conditions |</a><a href="privacy-policy.html"> Privacy Policy</a></div>
+    <div class="copyright"><p>© 2020 by <a href="index.html">THE CRWND STUDIO|</a> All rights reserved.</p></div>
+    <div>                   
+        <nav class="soc_media">
+            <a class="soc_site" href="https://www.facebook.com/theCROWNEDstudio/" target="_blank"> <img src="img/036-facebook.svg"></a>
+            <a class="soc_site" href="index.html"> <img src="img/008-twitter.svg" alt="Twitter"></a>
+            <a class="soc_site" href="index.html"> <img src="img/001-youtube.svg" alt="Youtube"></a>
+            <a class="soc_site" href="index.html"> <img src="img/029-instagram.svg" alt="Instagram"></a>
+        </nav>
+</div>
+</div>
+</footer>
+</body>
+</html>
